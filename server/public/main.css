@@ -1,0 +1,17 @@
+/* Header background: #F6F6F7
+
+Font colour:  #222222 and #888888
+
+Required star *: #C90000
+
+Border light grey: #CCCCCC
+
+Border dark grey #222222
+  */
+ 
+ 
+ .header {
+    background-color: #F6F6F7;
+    width: 100%;
+    height: 30px;
+ }

@@ -1,8 +1,12 @@
 import React from 'react'
+import ClassicTee from './ClassicTee'
 
 const App = () => {
   return (
-    <h1>Retail site!</h1>
+    <div>
+      <ClassicTee />
+    </div>
+    
   )
 }
 

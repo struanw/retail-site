@@ -2,26 +2,32 @@ import React from 'react'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 
-// import Cart from './Cart'
+//import Cart from './Cart'
 
 class ClassicTee extends React.Component {
-  constructor (props) {
-    super(props)
-    this.state = {}
-  }
+
+  
+    state = {
+      quantity: 0,
+    }
+  
+ 
+
+
+
 
   render () {
     return (
       <>
 
         <Row className="header">
-          <div className="cartText"> My Cart ( 0 ) </div>
+          <div className="cartText"> My Cart ({this.state.quantity} ) </div>
         </Row>
 
 <div className="container">
   <Row>
     <Col>
-      <img src={'./images/classic-tee.jpg'} width="440" height="660" alt=""></img>
+      <img src={'./images/classic-tee.jpg'} width="400" height="600" alt=""></img>
     </Col>
     <Col>
       <div className="rightSide">

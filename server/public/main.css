@@ -28,6 +28,7 @@ Border dark grey #222222
 
  
  .container{
+    
     justify-content: center;
     padding-bottom: 50px;
 }
@@ -53,7 +54,7 @@ border-bottom: 1px solid #F6F6F7;
     margin: .9em 0;
     color: #222222;
     font-size: 0.95em;
-   
+
  }
 
  .text {

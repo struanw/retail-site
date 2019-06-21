@@ -1,5 +1,4 @@
 import React from 'react'
-import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 
@@ -38,7 +37,6 @@ class ClassicTee extends React.Component {
         <div>
           <br/>
           <div className="size">SIZE <span className='star'>*</span> </div>
-          
 
           <button className='buttonSizes'>S</button>
           <button className='buttonSizes'>M</button>

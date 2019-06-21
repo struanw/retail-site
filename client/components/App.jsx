@@ -6,9 +6,7 @@ const App = () => {
     <div>
       <ClassicTee />
     </div>
-    
   )
 }
 
 export default App
-

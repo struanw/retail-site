@@ -24,6 +24,7 @@ export default class Cart extends Component {
             <p>Size: S</p>
           </Col>
         </Row>
+
         <Row>
           <Col>
             <br/>
@@ -39,7 +40,6 @@ export default class Cart extends Component {
           </Col>
         </Row>
       </div>
-
     )
   }
 }

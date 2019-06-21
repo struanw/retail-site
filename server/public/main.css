@@ -1,14 +1,3 @@
-/* Header background: #F6F6F7
-
-Font colour:  #222222 and #888888
-
-Required star *: #C90000
-
-Border light grey: #CCCCCC
-
-Border dark grey #222222
-  */
- 
 
  .header {
     background-color: #F6F6F7;
@@ -19,12 +8,10 @@ Border dark grey #222222
     margin-bottom: 30px;
  }
 
-
  @media only screen and (min-width: 750px) {
       .cartImage {
         display: none;
       }
-  
     }
 
 .cartText {
@@ -41,28 +28,41 @@ Border dark grey #222222
     display:none;
   }
 
+   .cartText:hover .floatCart{
+   float:right;
+   border: 1px solid #CCCCCC;
+   min-height: 100px;
+   min-width: 290px;
+   height: auto;
+   width: auto;
+   color:#222222;
+   display: block;
+   padding-right: 45px;
+   padding-left: 20px;
+   padding-bottom: 20px;
+   font-size: 1.1em;
+   background-color: white;
+   }
+
  .container{
-    justify-content: center;
-    padding-bottom: 50px;
-  
+   justify-content: center;
+   padding-bottom: 50px;
 }
 
 .rightSide{
-    margin-left: 45px;
-   
+  margin-left: 45px;  
 }
 
 
 .title{
-    font-size: 1.4em;
-    color: #222222;
-    opacity: 0.9;
+  font-size: 1.4em;
+  color: #222222;
+  opacity: 0.9;
 }
 
  .line{
-width: 100%;
-border-bottom: 1px solid #F6F6F7;
-
+  width: 100%;
+  border-bottom: 1px solid #F6F6F7;
 }
 
  .price {
@@ -70,7 +70,6 @@ border-bottom: 1px solid #F6F6F7;
     margin: .9em 0;
     color: #222222;
     font-size: 0.95em;
-
  }
 
  .text {
@@ -97,8 +96,6 @@ border-bottom: 1px solid #F6F6F7;
  }
  .buttonSizes:active {
     border: 2px solid #222222;
-
-
  }
 
  .addToCartButton {

@@ -34,38 +34,37 @@ class ClassicTee extends React.Component {
           </div>
         </Row>
 
-
-<div className="container">
-  <Row>
-    <Col xs='12' md='8' lg='6'>
-      <img src={'./images/classic-tee.jpg'} width="400" height="600" alt=""></img>
-    </Col>
-    <Col xs='12' md='8' lg='6'>
-      <div className="rightSide">
-        <p className='title'>Classic Tee</p>
-        <div className="line"></div>
-        <p className= 'price'>$75.00</p>
-        <div className="line"></div>
-        <br/>
-        <p className= 'text'>Dolor sit amet, consectetur adipiscing elit,
+      <div className="container">
+        <Row>
+          <Col xs='12' md='8' lg='6'>
+            <img src={'./images/classic-tee.jpg'} width="400" height="600" alt=""></img>
+          </Col>
+          <Col xs='12' md='8' lg='6'>
+            <div className="rightSide">
+              <p className='title'>Classic Tee</p>
+              <div className="line"></div>
+              <p className= 'price'>$75.00</p>
+              <div className="line"></div>
+              <br/>
+              <p className= 'text'>Dolor sit amet, consectetur adipiscing elit,
             sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
             minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
             consequat. Duis aute irure dolor in reprehenderit in voluptate.</p>
-        <div>
-          <br/>
-          <div className="size">SIZE <span className='star'>*</span> {this.state.selectedSize}</div>
+              <div>
+                <br/>
+                <div className="size">SIZE <span className='star'>*</span> {this.state.selectedSize}</div>
 
-          <button className='buttonSizes' onClick={() => this.updateSize('S')}>S</button>
-          <button className='buttonSizes' onClick={() => this.updateSize('M')}>M</button>
-          <button className='buttonSizes'onClick={() => this.updateSize('L')}>L</button>
+                <button className='buttonSizes' onClick={() => this.updateSize('S')}>S</button>
+                <button className='buttonSizes' onClick={() => this.updateSize('M')}>M</button>
+                <button className='buttonSizes'onClick={() => this.updateSize('L')}>L</button>
 
-        </div>
+              </div>
 
-        <button className='addToCartButton' onClick={() => this.updateCart()}>ADD TO CART</button>
+              <button className='addToCartButton' onClick={() => this.updateCart()}>ADD TO CART</button>
+            </div>
+          </Col>
+        </Row>
       </div>
-    </Col>
-  </Row>
-</div>
 
       </>
       )

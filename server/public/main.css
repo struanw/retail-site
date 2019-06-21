@@ -59,22 +59,64 @@ border-bottom: 1px solid #F6F6F7;
  .text {
     color:#888888;
     opacity: 0.8;
-    font-size: 0.85em;
+    font-size: 0.9em;
+    line-height: 1.7;
  }
 
  .size{
      color:#888888;
+     font-size: .7em;
+     font-weight: bold;
+     margin-bottom: 14px;
  }
 
  .buttonSizes {
     color:#888888;
-    width: 44px;
-    height: 44px;
-    margin-right: 7px;
-    font-size: 1em;
+    width: 42px;
+    height: 42px;
+    margin-right: 6px;
+    font-size: .8em;
     border: .5px solid #888888;
  }
+ .buttonSizes:active {
+    border: 2px solid #222222;
 
- .cartButton {
-    color:#888888;
+
  }
+
+ .addToCartButton {
+    color: #222222;
+    border: 2px solid #222222;
+    margin-top: 20px;
+    width: 165px;
+    height: 40px;
+    font-weight: bold;
+    font-size: .95em;
+    letter-spacing: 1px;
+    -webkit-transition: .2s all;   
+    -webkit-transition-delay: .2s; 
+    -moz-transition: .2s all;   
+    -moz-transition-delay: .2s; 
+    -ms-transition: .2s all;   
+    -ms-transition-delay: .2s; 
+    -o-transition: .2s all;   
+    -o-transition-delay: .2s; 
+    transition: .2s all;   
+    transition-delay: .2s; 
+    
+ }
+ 
+ 
+  .addToCartButton:hover {
+    background-color: black;
+    color: white;
+    -webkit-transition-delay: 0s;
+    -moz-transition-delay: 0s;
+    -ms-transition-delay: 0s;
+    -o-transition-delay: 0s;
+    transition-delay: 0s;
+    
+  }
+
+  
+*{font-family: Helvetica;}

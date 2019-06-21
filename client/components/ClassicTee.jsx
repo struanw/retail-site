@@ -2,22 +2,27 @@ import React from 'react'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 
-//import Cart from './Cart'
+// import Cart from './Cart'
 
 class ClassicTee extends React.Component {
-
-  
     state = {
       quantity: 0,
+      selectedSize: ''
     }
-  
- 
 
+    updateSize (size) {
+      this.setState({
+        selectedSize: size
+      })
+    }
 
+    updateCart = () => {
+      let { selectedSize } = this.state
+      console.log(this.state)
+    }
 
-
-  render () {
-    return (
+    render () {
+      return (
       <>
 
         <Row className="header">
@@ -42,23 +47,23 @@ class ClassicTee extends React.Component {
             consequat. Duis aute irure dolor in reprehenderit in voluptate.</p>
         <div>
           <br/>
-          <div className="size">SIZE <span className='star'>*</span> </div>
+          <div className="size">SIZE <span className='star'>*</span> {this.state.selectedSize}</div>
 
-          <button className='buttonSizes'>S</button>
-          <button className='buttonSizes'>M</button>
-          <button className='buttonSizes'>L</button>
+          <button className='buttonSizes' onClick={() => this.updateSize('S')}>S</button>
+          <button className='buttonSizes' onClick={() => this.updateSize('M')}>M</button>
+          <button className='buttonSizes'onClick={() => this.updateSize('L')}>L</button>
 
         </div>
 
-        <button className='addToCartButton'>ADD TO CART</button>
+        <button className='addToCartButton' onClick={() => this.updateCart()}>ADD TO CART</button>
       </div>
     </Col>
   </Row>
 </div>
 
       </>
-    )
-  }
+      )
+    }
 }
 
 export default ClassicTee

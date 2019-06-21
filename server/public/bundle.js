@@ -146,7 +146,7 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 
 
 
- //import Cart from './Cart'
+ // import Cart from './Cart'
 
 var ClassicTee =
 /*#__PURE__*/
@@ -167,15 +167,30 @@ function (_React$Component) {
     _this = _possibleConstructorReturn(this, (_getPrototypeOf2 = _getPrototypeOf(ClassicTee)).call.apply(_getPrototypeOf2, [this].concat(args)));
 
     _defineProperty(_assertThisInitialized(_this), "state", {
-      quantity: 0
+      quantity: 0,
+      selectedSize: ''
+    });
+
+    _defineProperty(_assertThisInitialized(_this), "updateCart", function () {
+      var selectedSize = _this.state.selectedSize;
+      console.log(_this.state);
     });
 
     return _this;
   }
 
   _createClass(ClassicTee, [{
+    key: "updateSize",
+    value: function updateSize(size) {
+      this.setState({
+        selectedSize: size
+      });
+    }
+  }, {
     key: "render",
     value: function render() {
+      var _this2 = this;
+
       return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap_Row__WEBPACK_IMPORTED_MODULE_1___default.a, {
         className: "header"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -203,14 +218,26 @@ function (_React$Component) {
         className: "size"
       }, "SIZE ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
         className: "star"
-      }, "*"), " "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
-        className: "buttonSizes"
+      }, "*"), " ", this.state.selectedSize), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
+        className: "buttonSizes",
+        onClick: function onClick() {
+          return _this2.updateSize('S');
+        }
       }, "S"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
-        className: "buttonSizes"
+        className: "buttonSizes",
+        onClick: function onClick() {
+          return _this2.updateSize('M');
+        }
       }, "M"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
-        className: "buttonSizes"
+        className: "buttonSizes",
+        onClick: function onClick() {
+          return _this2.updateSize('L');
+        }
       }, "L")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
-        className: "addToCartButton"
+        className: "addToCartButton",
+        onClick: function onClick() {
+          return _this2.updateCart();
+        }
       }, "ADD TO CART"))))));
     }
   }]);

@@ -192,7 +192,9 @@ function (_React$Component) {
         className: "text"
       }, "Dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate."), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "size"
-      }, "SIZE "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
+      }, "SIZE ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+        className: "star"
+      }, "*"), " "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
         className: "buttonSizes"
       }, "S"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
         className: "buttonSizes"

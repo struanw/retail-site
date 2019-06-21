@@ -37,7 +37,7 @@ class ClassicTee extends React.Component {
             consequat. Duis aute irure dolor in reprehenderit in voluptate.</p>
         <div>
           <br/>
-          <div className="size">SIZE </div>
+          <div className="size">SIZE <span className='star'>*</span> </div>
           
 
           <button className='buttonSizes'>S</button>

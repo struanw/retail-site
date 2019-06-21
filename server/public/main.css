@@ -19,22 +19,37 @@ Border dark grey #222222
     margin-bottom: 30px;
  }
 
+
+ @media only screen and (min-width: 750px) {
+      .cartImage {
+        display: none;
+      }
+  
+    }
+
 .cartText {
     padding-right: 200px;
     padding-top: 6px;
     color:#888888;
     font-size: 0.75em;
-}
+   }
 
- 
+   .cartText:hover{
+    color:#F6F6F7;
+  }
+  .floatCart{
+    display:none;
+  }
+
  .container{
-    
     justify-content: center;
     padding-bottom: 50px;
+  
 }
 
 .rightSide{
     margin-left: 45px;
+   
 }
 
 
@@ -47,6 +62,7 @@ Border dark grey #222222
  .line{
 width: 100%;
 border-bottom: 1px solid #F6F6F7;
+
 }
 
  .price {

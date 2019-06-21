@@ -2,7 +2,7 @@ import React from 'react'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 
-// import Cart from './Cart'
+import Cart from './Cart'
 
 class ClassicTee extends React.Component {
     state = {
@@ -16,9 +16,8 @@ class ClassicTee extends React.Component {
       })
     }
 
-    updateCart = () => {
-      let { selectedSize } = this.state
-      console.log(this.state)
+    updateCart = (quantity) => {
+      this.setState({ quantity: quantity })
     }
 
     render () {
@@ -26,15 +25,22 @@ class ClassicTee extends React.Component {
       <>
 
         <Row className="header">
-          <div className="cartText"> My Cart ({this.state.quantity} ) </div>
+          <img src={'./images/cart.png'} className='cartImage' width='25' height='25'alt=''>
+          </img>
+          <div className="cartText" > My Cart ( {this.state.quantity} )
+
+            <div className='floatCart'> My Cart ( {this.state.quantity} ) <Cart /></div>
+
+          </div>
         </Row>
+
 
 <div className="container">
   <Row>
-    <Col>
+    <Col xs='12' md='8' lg='6'>
       <img src={'./images/classic-tee.jpg'} width="400" height="600" alt=""></img>
     </Col>
-    <Col>
+    <Col xs='12' md='8' lg='6'>
       <div className="rightSide">
         <p className='title'>Classic Tee</p>
         <div className="line"></div>

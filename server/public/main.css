@@ -102,10 +102,9 @@ border-bottom: 1px solid #F6F6F7;
     -o-transition: .2s all;   
     -o-transition-delay: .2s; 
     transition: .2s all;   
-    transition-delay: .2s; 
-    
+    transition-delay: .2s;     
  }
- 
+
  
   .addToCartButton:hover {
     background-color: black;
@@ -115,7 +114,6 @@ border-bottom: 1px solid #F6F6F7;
     -ms-transition-delay: 0s;
     -o-transition-delay: 0s;
     transition-delay: 0s;
-    
   }
 
   

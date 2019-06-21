@@ -9,9 +9,67 @@ Border light grey: #CCCCCC
 Border dark grey #222222
   */
  
- 
+
  .header {
     background-color: #F6F6F7;
+    justify-content: flex-end;
     width: 100%;
-    height: 30px;
+    height: 40px;
+    margin: 20px;
+    margin-bottom: 50px;
+ }
+
+.cart {
+    padding-right: 200px;
+    padding-top: 10px;
+    color:#888888;
+    font-size: 0.8em;
+}
+
+ 
+ .container{
+    justify-content: center;
+    padding-bottom: 50px;
+}
+
+.rightSide{
+    margin-left: 45px;
+}
+
+
+.title{
+    font-size: 1.4em;
+    color: #222222;
+    opacity: 0.9;
+}
+
+ .line{
+width: 100%;
+border-bottom: 1px solid #F6F6F7;
+}
+
+ .price {
+    font-weight: bold;
+    margin: .9em 0;
+    color: #222222;
+    font-size: 0.95em;
+   
+ }
+
+ .text {
+    color:#888888;
+    opacity: 0.8;
+    font-size: 0.85em;
+ }
+
+ .size{
+     color:#888888;
+ }
+
+ .buttonSizes {
+    color:#888888;
+ }
+
+ .cartButton {
+    color:#888888;
  }

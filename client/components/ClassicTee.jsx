@@ -13,39 +13,46 @@ class ClassicTee extends React.Component {
 
   render () {
     return (
-      <div>
-        <Container>
-          <Row className ='header justify-content-end'>
-            <div>Cart</div>
-          </Row>
-        
+      <>
 
-     
-          <Row>
-            <Col>
-              <img src={'./images/classic-tee.jpg'} className='tee-image' width="400" height="600" alt=""></img>
-            </Col>
-            <Col>
-            <p>Classic Tee</p>
-            <p className = 'price'>$75</p>
-            <p className = 'text'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad 
-            minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo 
+        <Row className="header">
+          <div className="cart"> My Cart ( 0 ) </div>
+        </Row>
+
+<div className="container">
+  <Row>
+    <Col>
+      <img src={'./images/classic-tee.jpg'} width="440" height="660" alt=""></img>
+    </Col>
+    <Col>
+      <div className="rightSide">
+        <p className='title'>Classic Tee</p>
+        <div className="line"></div>
+        <p className= 'price'>$75.00</p>
+        <div className="line"></div>
+        <br/>
+        <p className= 'text'>Dolor sit amet, consectetur adipiscing elit,
+            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+            minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
             consequat. Duis aute irure dolor in reprehenderit in voluptate.</p>
-            <div>
-            <button>s</button>
-            <button>m</button>
-            <button>L</button>
-            </div>
-            <br/>
+        <div>
+          <div className="size">Size </div>
+          <br/>
 
-            <button>add to cart</button>
-            
-            </Col>
-          </Row>
-        </Container>
+          <button className='buttonSizes'>s</button>
+          <button className='buttonSizes'>m</button>
+          <button className='buttonSizes'>L</button>
 
+        </div>
+        <br/>
+
+        <button className='cartButton'>add to cart</button>
       </div>
+    </Col>
+  </Row>
+</div>
+
+      </>
     )
   }
 }

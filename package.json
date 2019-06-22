@@ -11,13 +11,9 @@
     "client": "webpack-dev-server --hot --inline",
     "dev": "node server & webpack --watch",
     "server": "node server",
-    "start": "webpack && node server",
-    "test": "jest --watchAll"
-  },
-  "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
     "test": "react-scripts test",
+    "build": "react-scripts build",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"

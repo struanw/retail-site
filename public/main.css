@@ -1,8 +1,10 @@
 
+
  .header {
     background-color: #F6F6F7;
     justify-content: flex-end;
-    width: 100%;
+    max-width: 100%;
+    width: auto;
     height: 33px;
     margin: 17px;
     margin-bottom: 30px;
@@ -10,23 +12,33 @@
 
  @media only screen and (min-width: 750px) {
       .cartImage {
-        display: none;
+        display: none;     
       }
     }
+
 
 .cartText {
     padding-right: 200px;
     padding-top: 6px;
     color:#888888;
     font-size: 0.75em;
+    max-width: 100;
    }
 
-   .cartText:hover{
-    color:#F6F6F7;
+   @media only screen and (max-width: 750px) {
+    .cartText{
+   display: none;
+    }
   }
+
+  
   .floatCart{
     display:none;
+  
   }
+  .cartText:hover{
+ color:#F6F6F7;
+}
 
    .cartText:hover .floatCart{
    float:right;
@@ -43,26 +55,60 @@
    font-size: 1.1em;
    background-color: white;
    }
+   
+   .cartImage:hover .floatCart{
+    float:right;
+    border: 1px solid #CCCCCC;
+    min-height: 100px;
+    min-width: 290px;
+    height: auto;
+    width: auto;
+    display: block;
+    padding-right: 45px;
+    padding-left: 20px;
+    padding-bottom: 20px;
+    font-size: 1.1em;
+    background-color: white;
+    z-index: 1;
+    }
+  
 
+   
  .container{
    justify-content: center;
    padding-bottom: 50px;
+   
+}
+
+
+.teeImage{
+  
+  height: auto;
+  max-width: 100% ;
+  
 }
 
 .rightSide{
   margin-left: 45px;  
 }
+@media only screen and (max-width: 750px) {
+  .rightSide{
+ 
+  margin: 1px;
+  }
+}
 
 
+
+@media only screen and (max-width: 750px) {
+  .title{
+   margin-top:15px;
+  }
+}
 .title{
   font-size: 1.4em;
   color: #222222;
   opacity: 0.9;
-}
-
- .line{
-  width: 100%;
-  border-bottom: 1px solid #F6F6F7;
 }
 
  .price {
@@ -70,7 +116,21 @@
     margin: .9em 0;
     color: #222222;
     font-size: 0.95em;
+    padding-top: .5em;
+    padding-bottom: .5em;
+    width: 100%;
+    border-bottom: 1.5px solid #F6F6F7;
+    border-top: 1.5px solid #F6F6F7;
  }
+ @media only screen and (max-width: 750px) {
+  .price{
+  border-bottom: none;
+  border-top: none;
+  padding-top: 0;
+  padding-bottom: 0;
+  margin: .5px;
+  }
+}
 
  .text {
     color:#888888;
@@ -93,6 +153,7 @@
     margin-right: 6px;
     font-size: .8em;
     border: .5px solid #888888;
+    background-color:white;
  }
  .buttonSizes:active {
     border: 2px solid #222222;
@@ -116,10 +177,10 @@
     -o-transition: .2s all;   
     -o-transition-delay: .2s; 
     transition: .2s all;   
-    transition-delay: .2s;     
+    transition-delay: .2s;
+    background-color:white;     
  }
 
- 
   .addToCartButton:hover {
     background-color: black;
     color: white;
@@ -130,7 +191,6 @@
     transition-delay: 0s;
   }
 
-  
 *{font-family: Helvetica;}
 
 .star {

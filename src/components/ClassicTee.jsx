@@ -25,8 +25,9 @@ class ClassicTee extends React.Component {
       <>
 
         <Row className="header">
-          <img src={'./images/cart.png'} className='cartImage' width='25' height='25'alt=''>
-          </img>
+         <div className='cartImage'> <img src={'./images/cart.png'} width='25' height='25'alt=''></img>( {this.state.quantity} )
+         <div className='floatCart'> <Cart /> ( {this.state.quantity} ) </div> 
+         </div>
           <div className="cartText" > My Cart ( {this.state.quantity} )
 
             <div className='floatCart'> My Cart ( {this.state.quantity} ) <Cart /></div>
@@ -37,14 +38,16 @@ class ClassicTee extends React.Component {
       <div className="container">
         <Row>
           <Col xs='12' md='8' lg='6'>
-            <img src={'./images/classic-tee.jpg'} width="400" height="600" alt=""></img>
+            <div>
+            <img src={'./images/classic-tee.jpg'} className='teeImage' width="400" height="600" alt=""></img>
+            </div>
           </Col>
           <Col xs='12' md='8' lg='6'>
             <div className="rightSide">
               <p className='title'>Classic Tee</p>
-              <div className="line"></div>
+            
               <p className= 'price'>$75.00</p>
-              <div className="line"></div>
+            
               <br/>
               <p className= 'text'>Dolor sit amet, consectetur adipiscing elit,
             sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad

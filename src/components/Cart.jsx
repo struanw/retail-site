@@ -13,7 +13,7 @@ export default class Cart extends Component {
           <Col>
             <br/>
             <br/>
-            <img src={'./images/classic-tee.jpg'} className='cart-image' width='95' height='140' alt=''/>
+            <img src={'./images/classic-tee.jpg'} width='95' height='140' alt=''/>
           </Col>
 
           <Col>
@@ -29,7 +29,7 @@ export default class Cart extends Component {
           <Col>
             <br/>
             <br/>
-            <img src={'./images/classic-tee.jpg'} className='cart-image' width='95' height='140' alt=''/>
+            <img src={'./images/classic-tee.jpg'} width='95' height='140' alt=''/>
           </Col>
           <Col>
             <br/>

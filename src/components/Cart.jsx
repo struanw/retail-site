@@ -20,7 +20,7 @@ export default class Cart extends Component {
             <br/>
             <br/>
             <p>Classic Tee</p>
-            <p>1x $75.00</p>
+            <p>1x <b>$75.00</b></p>
             <p>Size: S</p>
           </Col>
         </Row>
@@ -35,7 +35,7 @@ export default class Cart extends Component {
             <br/>
             <br/>
             <p>Classic Tee</p>
-            <p>3x $75.00</p>
+            <p>3x <b>$75.00</b></p>
             <p>Size: L</p>
           </Col>
         </Row>

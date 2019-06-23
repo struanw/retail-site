@@ -26,7 +26,7 @@ class ClassicTee extends React.Component {
 
         <Row className="header">
       <img className='cartImage' src={'./images/cart.png'} width='25' height='25'alt=''></img>
-          <div className="cartText" > My Cart ( {this.state.quantity} )  <div className='float'> <Cart /></div> </div>
+          <div className="cartText"> <span className='miniCart'> My Cart</span> ( {this.state.quantity} )  <div className='float'> <Cart /></div> </div>
         
         </Row>
 

@@ -16,76 +16,46 @@
       }
     }
 
-
-.cartText {
-    padding-right: 200px;
-    padding-top: 6px;
+  .cartText{
+    display: block;
     color:#888888;
-    font-size: 0.75em;
-    max-width: 100;
-   }
+    margin-right: 100px;
+    z-index: 1;
 
-   @media only screen and (max-width: 750px) {
-    .cartText{
-   display: none;
-    }
+  }
+  .float{
+display:none;
   }
 
-  
-  .floatCart{
-    display:none;
-  
-  }
-  .cartText:hover{
- color:#F6F6F7;
-}
 
-   .cartText:hover .floatCart{
-   float:right;
-   border: 1px solid #CCCCCC;
+.cartText:hover > .float{ 
+ 
+  padding-top: 6px;
+  color:#222222;
+  font-size: 0.75em;
+  max-width: 100;
+  float:left;
+  border: 1px solid #CCCCCC;
    min-height: 100px;
-   min-width: 290px;
    height: auto;
    width: auto;
-   color:#222222;
    display: block;
-   padding-right: 45px;
+   padding-right: 100px;
    padding-left: 20px;
    padding-bottom: 20px;
-   font-size: 1.1em;
    background-color: white;
+   z-index: 1;
    }
-   
-   .cartImage:hover .floatCart{
-    float:right;
-    border: 1px solid #CCCCCC;
-    min-height: 100px;
-    min-width: 290px;
-    height: auto;
-    width: auto;
-    display: block;
-    padding-right: 45px;
-    padding-left: 20px;
-    padding-bottom: 20px;
-    font-size: 1.1em;
-    background-color: white;
-    z-index: 1;
-    }
   
-
-   
  .container{
    justify-content: center;
    padding-bottom: 50px;
-   
 }
 
 
 .teeImage{
-  
   height: auto;
   max-width: 100% ;
-  
 }
 
 .rightSide{
